@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import {setColor, setFont} from '../../helper-styles.js'
 
 const Globals = createGlobalStyle`
 
@@ -10,12 +11,13 @@ const Globals = createGlobalStyle`
  box-sizing:border-box;
 }
 body{
- background:#fff;
- color:#222;
+ background:${setColor.primaryColor};
+ color:${setColor.mainBlack};
  font-size:100%;
 }
-body,p {font-family: 'Raleway', sans-serif;}
-h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif;}
+body,p {${setFont.mainFont}}
+h1,h2,h3,h4,h5,h6 {${setFont.headerFont}}
+
 h1{
  font-size:3em;font-weight: 400;line-height:1.2;margin-bottom:0.5em;
 }
