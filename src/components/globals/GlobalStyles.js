@@ -3,15 +3,13 @@ import {setColor, setFont} from '../../helper-styles.js'
 
 const Globals = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,200&family=Raleway:ital,wght@0,200;0,400;0,600;1,200&display=swap');
-
 *{
  margin:0;
  padding:0;
  box-sizing:border-box;
 }
 body{
- background:${setColor.primaryColor};
+ background:${setColor.pink};
  color:${setColor.mainBlack};
  font-size:100%;
 }
@@ -22,10 +20,10 @@ h1{
  font-size:3em;font-weight: 400;line-height:1.2;margin-bottom:0.5em;
 }
 h2{
- font-size:2em;font-weight:400;margin-bottom:0.75em
+ font-size:2em;font-weight:400;margin-bottom:0.75em;
 }
 h3{
- font-size:1.5em;font-weight:400;line-height:1;margin-bottom:1em
+ font-size:1.5em;font-weight:400;line-height:1;margin-bottom:1em;
 }
 h4{
  font-size:1.2em;line-height:1.2;margin-bottom:1.25em;font-weight:400;

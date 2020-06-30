@@ -4,6 +4,7 @@ export const setColor = {
   mainGrey: "#a19996",
   lightGrey: "#c2bcbb",
   primaryColor: "#ff655d", //mccPink
+  pink: "#e87661"
 }
 
 export const setFont = {
