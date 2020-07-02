@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 import GlobalStyles from './components/globals/GlobalStyles'
 
 
@@ -14,7 +15,7 @@ import Error from './pages/Error'
 function App() {
   return (
     <>
-      <GlobalStyles/>
+      <GlobalStyles />
       <BrowserRouter basename="/">
         <Switch>
           <Route path="/" exact> <Home/> </Route>

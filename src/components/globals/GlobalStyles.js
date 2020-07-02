@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 import {setColor, setFont} from '../../helper-styles.js'
 
 const Globals = createGlobalStyle`
-
 *{
  margin:0;
  padding:0;
@@ -11,11 +10,11 @@ const Globals = createGlobalStyle`
 body{
  background:${setColor.pink};
  color:${setColor.mainBlack};
+ font-family: proxima-nova, sans-serif;
  font-size:100%;
+ font-weight: 400;
+ font-style: normal;
 }
-body,p {${setFont.mainFont}}
-h1,h2,h3,h4,h5,h6 {${setFont.headerFont}}
-
 h1{
  font-size:3em;font-weight: 400;line-height:1.2;margin-bottom:0.5em;
 }
