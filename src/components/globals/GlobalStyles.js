@@ -10,10 +10,8 @@ const Globals = createGlobalStyle`
 body{
  background:${setColor.pink};
  color:${setColor.mainBlack};
- font-family: proxima-nova, sans-serif;
+ ${setFont.proximaNormal};
  font-size:100%;
- font-weight: 400;
- font-style: normal;
 }
 h1{
  font-size:3em;font-weight: 400;line-height:1.2;margin-bottom:0.5em;
@@ -39,4 +37,3 @@ p{
 `;
 
 export default Globals;
-

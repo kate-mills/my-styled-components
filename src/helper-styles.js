@@ -8,9 +8,11 @@ export const setColor = {
 }
 
 export const setFont = {
-  headerFont: "font-family: 'Montserrat', sans-serif;",
-  mainFont: "font-family: 'Raleway', sans-serif;",
-  proxima: "font-family: proxima-nova, sans-serif"
+  proximaNormal: `
+  font-family:proxima-nova, sans-serif;
+  font-weight:400;
+  font-style:normal;
+  `
 }
 
 //flex-start flex-end
