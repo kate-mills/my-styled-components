@@ -30,11 +30,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#ff665e",
   "background_color": "#ffffff",
-  "omnibox": { "keyword" : "michele" },
+  "omnibox": { "keyword" : "skincare" },
   "background": {
           "persistent": false,
           "scripts": ["background.js"]
