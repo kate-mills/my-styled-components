@@ -1,15 +1,18 @@
 import React from 'react'
+import Hero from '../globals/Hero'
+//img='https://i.imgur.com/X2oj0mu.jpg'
 
-const Header = () => {
-  return ( <div><h1>Header</h1>
-
-    <h2>h2</h2>
-    <h3>h3</h3>
-    <h4>h4</h4>
-    <h5>h5</h5>
-    <h6>h6</h6>
-
-    </div>)
+const HeroBackground = (props) => {
+  return (
+    <Hero
+      border={`${props.border|| '10%'}`}
+      color={`${props.color || 'rgba(225,225,225,0.95)'}`}
+      img={`${props.img|| false}`}
+      minHeight={`${props.minHeight || false}`}
+    >
+      <h1>{props.header}</h1>
+    </Hero>
+    )
 }
 
-export default Header
+export default HeroBackground

@@ -28,6 +28,6 @@ export const setImg = ({src}) => {
   return img;
 }
 
-export const setBackground = ({img='https://i.imgur.com/X2oj0mu.jpg', color='rgba(0,0,0,0)'}={}) => {
+export const setBackground = ({img='', color='rgba(0,0,0,0)'}={}) => {
   return` background: linear-gradient(${color}, ${color}), url(${img}) center/cover fixed no-repeat`;
 }

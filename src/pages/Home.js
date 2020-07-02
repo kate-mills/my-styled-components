@@ -1,11 +1,17 @@
 import React from 'react'
-import Header from '../components/home/Header'
+import HeroHeader from '../components/home/Header'
+
 
 const Home = () => {
   return (
     <>
-      <Header />
-      Home Page
+      <HeroHeader
+        border='10%'
+        color='rgba(225,225,225,0.95)'
+        img={false}
+        minHeight='100vh'
+        header='Home'
+      />
     </>
   )
 }
