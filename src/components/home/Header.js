@@ -5,11 +5,8 @@ import Hero from '../globals/Hero'
 const HeroBackground = (props) => {
   return (
     <Hero
-      border={`${props.border|| '10%'}`}
-      color={`${props.color || 'rgba(225,225,225,0.95)'}`}
-      img={`${props.img|| false}`}
-      minHeight={`${props.minHeight || false}`}
-    >
+      color={props.color}
+      img={`${props.img || false}`}>
       <h1>{props.header}</h1>
     </Hero>
     )

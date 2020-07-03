@@ -3,15 +3,12 @@ export const setColor = {
   mainBlack: "#222",
   mainGrey: "#a19996",
   lightGrey: "#d3d3d3",
-  primaryColor: "#ff655d", //mccPink
-  pink: "#e87661"
+  mccPink: "#ff655d", //mccPink
 }
 
 export const setFont = {
-  proximaNormal: `
+  proximaNova: `
   font-family:proxima-nova, sans-serif;
-  font-weight:400;
-  font-style:normal;
   `
 }
 

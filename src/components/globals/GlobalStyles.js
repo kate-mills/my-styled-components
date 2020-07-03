@@ -8,9 +8,9 @@ const Globals = createGlobalStyle`
  box-sizing:border-box;
 }
 body{
- background:${setColor.pink};
+ background:${setColor.mccPink};
  color:${setColor.mainBlack};
- ${setFont.proximaNormal};
+ ${setFont.proximaNova};
  font-size:100%;
 }
 h1{
@@ -35,5 +35,4 @@ p{
  line-height:1.5;margin:0 0 1.5 0;
 }
 `;
-
 export default Globals;

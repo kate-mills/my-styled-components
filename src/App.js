@@ -1,7 +1,5 @@
 import React from 'react';
-import './App.css'
 import GlobalStyles from './components/globals/GlobalStyles'
-
 
 import {
   BrowserRouter,
@@ -14,7 +12,7 @@ import Error from './pages/Error'
 
 function App() {
   return (
-    <>
+    <React.Fragment>
       <GlobalStyles />
       <BrowserRouter basename="/">
         <Switch>
@@ -22,7 +20,7 @@ function App() {
           <Route path="*"> <Error/> </Route>
         </Switch>
       </BrowserRouter>
-    </>
+    </React.Fragment>
   );
 }
 
