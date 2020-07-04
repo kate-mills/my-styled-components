@@ -1,5 +1,6 @@
 import React from 'react';
 import GlobalStyles from './components/globals/GlobalStyles'
+import Overlay from './components/globals/Overlay'
 
 import {
   BrowserRouter,
@@ -12,7 +13,9 @@ import Error from './pages/Error'
 
 function App() {
   return (
+
     <React.Fragment>
+      <Overlay/>
       <GlobalStyles />
       <BrowserRouter basename="/">
         <Switch>
