@@ -8,7 +8,7 @@ const Globals = createGlobalStyle`
  box-sizing:border-box;
 }
 body{
- background:${setColor.mccPink};
+ background:${setColor.mainWhite};
  color:${setColor.mainBlack};
  ${setFont.proximaNova};
  font-size:100%;

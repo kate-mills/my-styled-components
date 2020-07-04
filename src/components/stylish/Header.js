@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-//img='https://i.imgur.com/X2oj0mu.jpg'
+
+import {screen} from '../../helper-styles'
 
 const StyledHeader  = ({childrenFirst, childrenLast, children,  text, num, className}) => {
   return (
@@ -35,6 +36,13 @@ export const Header = styled(StyledHeader)`
     font-style: normal;
     font-weight: 400;
   }
-  &:hover {
-  }
+   ${screen.phone.phone`
+      background-color: red;
+   `}
+   ${screen.tablet.tablet`
+      background-color: orange;
+   `}
+  ${screen.desktop.desktop`
+    background-color: green;
+  `}
 `

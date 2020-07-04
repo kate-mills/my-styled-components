@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import {BasicImage} from '../components/stylish/Image'
 import {Header} from '../components/stylish/Header'
 
@@ -22,9 +21,10 @@ const Home = () => {
      >
        <BasicImage 
          src={Logo.md}
-         alt="michele Corley Basic Logo"
+         alt={Logo.alt}
          width="auto"
          height="auto"
+         overflow="auto"
        />
       </Header>
    </>

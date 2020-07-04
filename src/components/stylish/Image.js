@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled  from 'styled-components'
 import logo from '../../images/small-logo.png'
 
 
@@ -9,6 +9,5 @@ export const BasicImage = styled.img.attrs(props => ({
   height: props.height || "222px",
 
 }))`
-
   background-color: rgba(225,100,92,1);
 `
