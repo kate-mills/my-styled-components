@@ -14,7 +14,7 @@ body{
  font-size:100%;
 }
 h1{
- font-size:3em;font-weight: 400;line-height:1.2;margin-bottom:0.5em;
+ font-size:3em;font-weight:300;line-height:1.2;margin-bottom:0.5em;
 }
 h2{
  font-size:2em;font-weight:400;margin-bottom:0.75em;

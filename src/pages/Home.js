@@ -1,15 +1,33 @@
 import React from 'react'
-import HeroHeader from '../components/home/Header'
 
+
+import {BasicImage} from '../components/stylish/Image'
+import {Header} from '../components/stylish/Header'
+
+const Logo = {
+  sm: "https://i.imgur.com/T2p4zYOt.jpg",
+  med:"https://i.imgur.com/T2p4zYOm.jpg",
+  lg:"https://i.imgur.com/T2p4zYOl.jpg", 
+}
 
 const Home = () => {
   return (
     <>
-      <HeroHeader
-        color='rgba(225,225,225,0.95)'
-        header='Home'
-      />
-    </>
+     <Header
+       center
+       num={1}
+       text="Beautifully Healthy Skin Starts Here"
+       childs="above"
+       childrenFirst
+     >
+       <BasicImage 
+         src={Logo.md}
+         alt="michele Corley Basic Logo"
+         width="auto"
+         height="auto"
+       />
+      </Header>
+   </>
   )
 }
 
