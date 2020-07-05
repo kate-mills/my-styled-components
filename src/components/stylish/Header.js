@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {screen, transition} from '../../helper-styles'
+import {transition} from '../../helper-styles'
+import {screen} from '../../media-styles'
 
 const Header  = ({childrenFirst, childrenLast, children,  text, num, className}) => {
   return (
@@ -23,15 +24,14 @@ export default styled(Header)`
 
   background-color: ${props => props.backgroundColor || "white"};
   text-align: ${props => props.center ? "center": "unset"};
-  h1 {
-    font-size: "45px"};
-    line-height: 54px;
-    color: #222222;
+  ${screen.font.setFont(30, 45)} };
+  &:h1 {
+    font-size: 45px;
     font-style: normal;
     font-weight: 300;
     margin: 0 auto;
   }
-  h2 {
+  &:h2 {
     font-size: 30px;
     line-height: 42px;
     color: rgba(179,0,0,0.8);

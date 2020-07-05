@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import {setColor, screen, transition} from '../../helper-styles'
+import {setColor,  transition} from '../../helper-styles'
+import {screen} from '../../media-styles'
 
 
 
@@ -20,7 +21,7 @@ const OverlayWhiteWrapper = styled(OverlayWhite)`
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -10; /* Specify a stack order in case you're using a different order for other elements */
+  z-index: -9; /* Specify a stack order in case you're using a different order for other elements */
   background-color: ${setColor.mainWhite};
   width: 80vw; /* Full width (cover the whole page) */
   ${screen.phone.phone`width:100vw;`};

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import {setColor, setFont} from '../../helper-styles.js'
+import {setColor, setFontFamily, setFontSize} from '../../helper-styles.js'
 
 const Globals = createGlobalStyle`
 *{
@@ -10,27 +10,28 @@ const Globals = createGlobalStyle`
 body{
  background:${setColor.mainWhite};
  color:${setColor.mainBlack};
- ${setFont.proximaNova};
- font-size:100%;
+ ${setFontFamily.proximaNova};
+ ${setFontSize(15, 17)}
+ line-height: 1.8em;
  background-color:rgba(255, 102, 104, 1);
 }
 h1{
- font-size:3em;font-weight:300;line-height:1.2;margin-bottom:0.5em;
+ font-weight:300;line-height:1.2;margin-bottom:0.5em;
 }
 h2{
- font-size:2em;font-weight:400;margin-bottom:0.75em;
+ font-weight:400;margin-bottom:0.75em;
 }
 h3{
- font-size:1.5em;font-weight:400;line-height:1;margin-bottom:1em;
+ font-weight:400;line-height:1;margin-bottom:1em;
 }
 h4{
- font-size:1.2em;line-height:1.2;margin-bottom:1.25em;font-weight:400;
+ line-height:1.2;margin-bottom:1.25em;font-weight:400;
 }
 h5{
- font-size:1em;margin-bottom:1.5em;font-weight:bold;
+ margin-bottom:1.5em;font-weight:bold;
 }
 h6{
- font-size:1em;font-weight:bold;
+ font-weight:bold;
 }
 p{
  line-height:1.5;margin:0 0 1.5 0;

@@ -1,11 +1,8 @@
 import React from 'react'
 
-import {BasicImage} from '../components/stylish/Image'
 import Header from '../components/stylish/Header'
-
-import {screen} from '../helper-styles'
+import {BasicImage} from '../components/stylish/Image'
 import SlideShowEvent from '../components/globals/SlideShowEvent'
-
 import styled from 'styled-components'
 
 const Logo = {
@@ -13,7 +10,6 @@ const Logo = {
   med:"https://i.imgur.com/T2p4zYOm.jpg",
   lg:"https://i.imgur.com/T2p4zYOl.jpg", 
 }
-
 
 const Home = ({className}) => {
   return (
@@ -38,7 +34,4 @@ const Home = ({className}) => {
   )
 }
 export default styled(Home)`
-  ${screen.phone.phone``}
-  ${screen.tablet.tablet``}
-  ${screen.desktop.desktop``}
 `

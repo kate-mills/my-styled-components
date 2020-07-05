@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {setColor} from '../../helper-styles'
+import {screen} from '../../media-styles'
 
 
 const  OverlayPink = ({className}) => {
@@ -20,5 +21,8 @@ const OverlayPinkWrapper = styled(OverlayPink)`
   bottom: 0;
   z-index:-11; /* Very Bottom of stack */
   background-color: ${(props) => props.backgroundColor? props.backgroundColor: setColor.mccPink};
+  ${screen.phone.phone`width:100vw;`};
+  ${screen.tablet.tablet`width:100vw;`};
+  ${screen.desktop.desktop`width:100vw;`};
 `
 export default OverlayPinkWrapper;
