@@ -1,7 +1,12 @@
 import React from 'react'
 
 import {BasicImage} from '../components/stylish/Image'
-import {Header} from '../components/stylish/Header'
+import Header from '../components/stylish/Header'
+
+import {screen} from '../helper-styles'
+import SlideShowEvent from '../components/SlideShowEvent'
+
+import styled from 'styled-components'
 
 const Logo = {
   sm: "https://i.imgur.com/T2p4zYOt.jpg",
@@ -9,9 +14,10 @@ const Logo = {
   lg:"https://i.imgur.com/T2p4zYOl.jpg", 
 }
 
-const Home = () => {
+
+const Home = ({className}) => {
   return (
-    <>
+   <div className={className}>
      <Header
        center
        num={1}
@@ -27,8 +33,12 @@ const Home = () => {
          overflow="auto"
        />
       </Header>
-   </>
+      <SlideShowEvent/>
+    </div>
   )
 }
-
-export default Home
+export default styled(Home)`
+  ${screen.phone.phone``}
+  ${screen.tablet.tablet``}
+  ${screen.desktop.desktop``}
+`

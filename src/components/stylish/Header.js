@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import {screen} from '../../helper-styles'
 
-const StyledHeader  = ({childrenFirst, childrenLast, children,  text, num, className}) => {
+const Header  = ({childrenFirst, childrenLast, children,  text, num, className}) => {
   return (
     <div className={className}>
       {childrenFirst ? <div>{children}</div>: <></>}
@@ -18,7 +18,7 @@ const StyledHeader  = ({childrenFirst, childrenLast, children,  text, num, class
   )
 }
 
-export const Header = styled(StyledHeader)`
+export default styled(Header)`
   transition: ${props => props.transition || "all 1s ease-in-out"};
   background-color: ${props => props.backgroundColor || "white"};
   text-align: ${props => props.center ? "center": "unset"};
