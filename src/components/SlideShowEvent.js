@@ -62,7 +62,7 @@ export default styled(SlideShow)`
   flex-direction: row;
   justify-content: center;
   margin: auto;
-  border: 1px solid pink;
+  border: 0;
   height: 549px;
   width: 100vw;
   object-fit: cover;
