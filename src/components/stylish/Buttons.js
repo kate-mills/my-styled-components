@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {transition} from '../../helper-styles'
 
 const StyledButton = ({text, className}) => {
   return(
@@ -10,7 +11,7 @@ const StyledButton = ({text, className}) => {
 }
 
 export default styled(StyledButton)`
-  transition: ${props => props.still ? "none":"all 1s ease"};
+  ${props => props.still ? "transition:none": ${transition}};
   background: ${props => props.background ||  "white"};
   border: ${props => props.border || "none"};
   color: ${props => props.color || "black"};

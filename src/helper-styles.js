@@ -1,3 +1,5 @@
+export const transition = "transition: all .5s ease-in-out;";
+
 export const setColor = {
   mainWhite: "#ffffff",
   mainBlack: "#222",

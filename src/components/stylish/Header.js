@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {screen} from '../../helper-styles'
+import {screen, transition} from '../../helper-styles'
 
 const Header  = ({childrenFirst, childrenLast, children,  text, num, className}) => {
   return (
@@ -19,7 +19,8 @@ const Header  = ({childrenFirst, childrenLast, children,  text, num, className})
 }
 
 export default styled(Header)`
-  transition: ${props => props.transition || "all 1s ease-in-out"};
+  ${transition};
+
   background-color: ${props => props.backgroundColor || "white"};
   text-align: ${props => props.center ? "center": "unset"};
   h1 {
@@ -36,13 +37,18 @@ export default styled(Header)`
     font-style: normal;
     font-weight: 400;
   }
+  margin: 0 auto;
    ${screen.phone.phone`
       background-color: red;
+      width: 100vw;
+      margin:0 auto;
    `}
    ${screen.tablet.tablet`
       background-color: orange;
+      width:100vw;
    `}
   ${screen.desktop.desktop`
     background-color: green;
+    width:80vw;
   `}
 `

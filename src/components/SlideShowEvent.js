@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import  {SlideShowImages} from '../constants/imageurls'
+import {transition, screen} from '../helper-styles'
 
 class SlideShow extends React.Component {
   state = {
@@ -64,11 +65,10 @@ export default styled(SlideShow)`
   margin: auto;
   border: 0;
   height: 549px;
-  width: 100vw;
   object-fit: cover;
   box-sizing: border-box;
   background-color: white;
-  transition: all .4s ease-in-out;
+  ${transition};
   .img {
      display: block;
   }
@@ -88,5 +88,8 @@ export default styled(SlideShow)`
   border: 0;
   box-sizing: border-box;
   }
+  ${screen.phone.phone`width:100vw;`};
+  ${screen.tablet.tablet`width:100vw;`};
+  ${screen.desktop.desktop`width:80vw;`};
 `
 
