@@ -29,6 +29,7 @@ export default styled(Header)`
     color: #222222;
     font-style: normal;
     font-weight: 300;
+    margin: 0 auto;
   }
   h2 {
     font-size: 30px;
@@ -36,19 +37,19 @@ export default styled(Header)`
     color: rgba(179,0,0,0.8);
     font-style: normal;
     font-weight: 400;
+    margin: 0 auto;
   }
+  background-color: white;
   margin: 0 auto;
    ${screen.phone.phone`
-      background-color: red;
       width: 100vw;
-      margin:0 auto;
+      h1,h2{width: 90vw; margin: 0 auto;}
    `}
    ${screen.tablet.tablet`
-      background-color: orange;
       width:100vw;
+      h1,h2{width: 90vw; margin:0 auto;}
    `}
   ${screen.desktop.desktop`
-    background-color: green;
     width:80vw;
   `}
 `
