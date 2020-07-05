@@ -47,6 +47,7 @@ class SlideShow extends React.Component {
                   alt={item.alt} 
                   style={{width: "100%"}}
                   samesite="None"
+                  crossOrigin=""
                 />
               </div>
             )
