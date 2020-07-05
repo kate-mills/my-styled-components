@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import  {SlideShowImages} from '../constants/imageurls'
-import {transition, screen} from '../helper-styles'
+import  {SlideShowImages} from '../../constants/imageurls'
+import {transition, screen} from '../../helper-styles'
 
 class SlideShow extends React.Component {
   state = {

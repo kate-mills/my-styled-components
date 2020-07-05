@@ -4,7 +4,7 @@ import {BasicImage} from '../components/stylish/Image'
 import Header from '../components/stylish/Header'
 
 import {screen} from '../helper-styles'
-import SlideShowEvent from '../components/SlideShowEvent'
+import SlideShowEvent from '../components/globals/SlideShowEvent'
 
 import styled from 'styled-components'
 
