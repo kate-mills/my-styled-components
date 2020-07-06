@@ -37,6 +37,13 @@ export const Img = {
    md: "https://i.imgur.com/T2p4zYOm.jpg",
    lg: "https://i.imgur.com/T2p4zYOl.jpg", 
 },
+  michele: {
+    alt: "Portrait of Michele Corley in a pretty red floral blouse.",
+    sm:  "https://i.imgur.com/69z5WEy.jpg",
+    md:  "https://i.imgur.com/jlxAOPm.jpg?1",
+    lg:"https://i.imgur.com/yKUEM9z.jpg", 
+
+  }
 };
 
 export const SafeImg =  Img.default;

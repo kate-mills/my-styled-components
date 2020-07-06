@@ -6,6 +6,7 @@ export const setColor = {
   mainGrey: "#a19996",
   lightGrey: "#d3d3d3",
   mccPink: "#ff655d", //mccPink
+  h2: "rgba(179,0,0,0.8)",
 }
 
 export const setFontSize = ({min_font=15, max_font=24, min_vw=300, max_vw=1600}={}) => { 

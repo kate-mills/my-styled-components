@@ -5,8 +5,8 @@ import {screen} from '../../media-styles'
 
 
 
-const  OverlayWhite = ({className}) => {
-  return  (<div className={className} id="overlay"/>
+const  OverlayWhite = ({className, id, zIndex}) => {
+  return  (<div className={className} id={id || "overlay"}/>
   )
 }
 
@@ -21,7 +21,7 @@ const OverlayWhiteWrapper = styled(OverlayWhite)`
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -9; /* Specify a stack order in case you're using a different order for other elements */
+  z-index: ${props => props.id ? props.id : -1000}; /* Specify a stack order in case you're using a different order for other elements */
   background-color: ${setColor.mainWhite};
   width: 80vw; /* Full width (cover the whole page) */
   ${screen.phone.phone`width:100vw;`};
