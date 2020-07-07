@@ -58,26 +58,24 @@ export default styled(About)`
     background: white;
     display: block;
     margin: 0 auto;
-    align-items: top;
   }
   .flexItem {
     box-sizing: border-box;
     margin: 0 auto;
   }
-  p { padding-top:10px; }
   p.text {
-    text-align: left;
     font-size: 15px;
     line-height: 27px;
     font-weight: 300;
-    margin-top: 30px;
   }
   p.tiny {
     font-size: 13px;
     line-height: 27px;
     font-weight: 300;
+  }
+  p.text,p.tiny {
     text-align: left;
-    margin-top: 20px;
+    padding:15px;
   }
   h1 {
     box-sizing: border-box;
@@ -89,8 +87,8 @@ export default styled(About)`
     line-height: 42px;
   }
   /* My Philosopy */
-  h1, .text {
-    padding-left: 30px;
+  h1 {
+    padding-left: 15px;
     flex-wrap: wrap;
   }
   /* Meet Michele Corley */
