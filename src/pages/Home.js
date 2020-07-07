@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Header from '../components/stylish/Header'
-import {LogoImage} from '../components/stylish/Image'
+import {LogoImg} from '../components/globals/LogoImg'
 import SlideShowEvent from '../components/globals/SlideShowEvent'
 import styled from 'styled-components'
 import {Img} from '../constants/imageurls.js'
@@ -18,7 +18,7 @@ const Home = ({className}) => {
        childrenFirst
      >
      <div className="img-box">
-       <LogoImage 
+       <LogoImg 
          src={Img.logo.md}
          alt={Img.logo.alt}
          crossOrigin=""

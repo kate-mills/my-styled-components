@@ -3,7 +3,7 @@ import logo from '../../images/logo-300x220.jpg'
 import {screen} from '../../media-styles'
 
 
-export const LogoImage = styled.img.attrs(props => ({
+export const LogoImg = styled.img.attrs(props => ({
   alt: props.alt || "Michele Corley Logo",
   src: props.src || logo,
   display: props.display || "block",
