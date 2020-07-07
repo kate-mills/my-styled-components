@@ -6,7 +6,7 @@ import {screen} from '../../media-styles'
 class SlideShow extends React.Component {
   state = {
    active: 0,
-    transitionTime: 8000, 
+    transitionTime: 5000,
   };
   handleShow = () => {
     var slides = document.getElementsByClassName("mySlides");
