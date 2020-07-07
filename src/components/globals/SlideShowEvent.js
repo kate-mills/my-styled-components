@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import  {SlideShowImages} from '../../constants/imageurls'
-import {transition} from '../../helper-styles'
 import {screen} from '../../media-styles'
 
 class SlideShow extends React.Component {
@@ -70,7 +69,6 @@ export default styled(SlideShow)`
   object-fit: cover;
   box-sizing: border-box;
   background-color: white;
-  ${transition};
   .img {
      display: block;
   }

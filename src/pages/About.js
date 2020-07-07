@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from 'styled-components'
 import {Img} from '../constants/imageurls'
-import {setColor, transition} from '../helper-styles'
+import {setColor} from '../helper-styles'
 import {screen} from '../media-styles'
 
 const About = ({className}) => {
@@ -48,7 +48,6 @@ export default styled(About)`
   &{
     box-sizing: border-box;
     background: white;
-    ${transition};
     display: flex;
     margin: 0 auto;
     max-width: 80vw;
