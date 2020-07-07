@@ -11,6 +11,7 @@ import {
 
 import Home from './pages/Home'
 import About from './pages/About'
+import Whymc from './pages/Whymc'
 import Error from './pages/Error'
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       <BrowserRouter basename="/">
         <Switch>
           <Route path="/" exact> <Home/> </Route>
-          <Route path="/about" > <About/></Route>
+          <Route path="/about"> <About/></Route>
+          <Route path="/why-mc"> <Whymc/></Route>
           <Route path="*"> <Error/> </Route>
         </Switch>
       </BrowserRouter>

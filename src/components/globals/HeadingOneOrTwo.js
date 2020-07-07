@@ -2,7 +2,7 @@ import React from 'react'
 import {screen} from '../../media-styles'
 import styled from 'styled-components'
 
-const Header  = ({children,  text, num, className}) => {
+const HeadingOneOrTwo  = ({children,  text, num, className}) => {
   return (
     <div className={className}>
       { num > 1 ? 
@@ -12,23 +12,22 @@ const Header  = ({children,  text, num, className}) => {
     </div>
   )
 }
-export default styled(Header)`
+export default styled(HeadingOneOrTwo)`
   & {
     margin: 0 auto;
     background-color: ${props => props.backgroundColor || "white"};
-    text-align: ${props => props.center ? "center": "unset"};
+    text-align: ${props => props.center ? "center": "center"};
     ${screen.font.setFont(30, 45)};
   }
-   ${screen.phone.phone`
-      width: 100vw;
+  h2 {color: rgba(179,0,0,.8)};
+  ${screen.phone.phone`
+     &{width:80%;}
    `}
-   ${screen.tablet.tablet`
-      &{width: 100vw;}
-      background: orange;
+  ${screen.tablet.tablet`
+     &{width: 60%;} 
    `}
   ${screen.desktop.desktop`
-      &{width: 80vw;}
-      background: green;
+    &{width: 80%;}
   `}
 `
 
