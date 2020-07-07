@@ -1,15 +1,11 @@
 import React from 'react'
 
 import Header from '../components/stylish/Header'
-import {BasicImage} from '../components/stylish/Image'
+import {LogoImage} from '../components/stylish/Image'
 import SlideShowEvent from '../components/globals/SlideShowEvent'
 import styled from 'styled-components'
+import {Img} from '../constants/imageurls.js'
 
-const Logo = {
-  sm: "https://i.imgur.com/T2p4zYOt.jpg",
-  med:"https://i.imgur.com/T2p4zYOm.jpg",
-  lg:"https://i.imgur.com/T2p4zYOl.jpg", 
-}
 
 const Home = ({className}) => {
   return (
@@ -21,17 +17,18 @@ const Home = ({className}) => {
        childs="above"
        childrenFirst
      >
-       <BasicImage 
-         src={Logo.md}
-         alt={Logo.alt}
-         width="auto"
-         height="auto"
-         overflow="auto"
+     <div className="img-box">
+       <LogoImage 
+         src={Img.logo.md}
+         alt={Img.logo.alt}
+         crossOrigin=""
        />
+     </div>
       </Header>
       <SlideShowEvent/>
     </div>
   )
 }
 export default styled(Home)`
+.img-box {margin-bottom: 20px;}
 `

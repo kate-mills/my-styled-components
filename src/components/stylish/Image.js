@@ -1,14 +1,21 @@
 import styled  from 'styled-components'
-import logo from '../../images/small-logo.png'
+import logo from '../../images/logo-300x220.jpg'
+import {screen} from '../../media-styles'
 
 
-export const BasicImage = styled.img.attrs(props => ({
-  alt: props.alt || "Michele Corley",
+export const LogoImage = styled.img.attrs(props => ({
+  alt: props.alt || "Michele Corley Logo",
   src: props.src || logo,
-  width: props.width || "auto",
-  height: props.height || "auto",
   display: props.display || "block",
+  width: props.width || "auto"
 }))`
-  background-color: rgba(225,100,92,1);
-  object-fit: cover;
+  margin: 0 auto;
+  background-color: rgba(225,100,92,0);
+  object-fit: contain;
+    ${screen.phone.phone`
+  width:256px;
+  `}
+    ${screen.tablet.tablet`
+  width:256px;
+  `}
 `

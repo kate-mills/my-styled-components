@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import {BasicImage} from '../components/stylish/Image'
 import {Img} from '../constants/imageurls'
 import {setColor, transition} from '../helper-styles'
 import {screen} from '../media-styles'
@@ -28,15 +27,14 @@ const About = ({className}) => {
       <div className="flexItem col">
         <div className="innerFlexContainer">
           <h2>Meet Michele Corley</h2>
-          <BasicImage 
+          <img 
             src={Img.michele.md}
             alt={Img.michele.alt}
             width="446"
-            height="542"
+            height="457"
             overflow="hidden"
-            crossOrigin="">
+            crossOrigin=""/>
 
-          </BasicImage>
           <div className="flexItem">
             <p className="tiny">Michele is a licensed esthetician and creative visionary behind every Michele Corley Clinical Skincare product. She is deeply committed to educating herself first, so she can then be a resource to support her clients' success. Her passion and drive to create the best possible experience for her clients shines through each Michele Corley Clinical Skincare Product and every client interaction.</p>
             <p className="tiny">Michele studied with one of the foremost cosmetic chemistry authorities in the professional skincare industry, and has advanced knowledge of skin aging, acne conditions and rosecea.</p>
@@ -47,22 +45,27 @@ const About = ({className}) => {
   )
 }
 export default styled(About)`
-  box-sizing: border-box;
-  background: white;
-  display: flex;
-  margin: 0 auto;
-  ${transition};
-  max-width: 80vw;
+  &{
+    box-sizing: border-box;
+    background: white;
+    ${transition};
+    display: flex;
+    margin: 0 auto;
+    max-width: 80vw;
+  }
   h2.italic{font-style: italic; text-align: center;}
   img {
     background: white;
+    display: block;
+    margin: 0 auto;
+    align-items: top;
   }
   .flexItem {
     box-sizing: border-box;
     margin: 0 auto;
   }
+  p { padding-top:10px; }
   p.text {
-    box-sizing: border-box;
     text-align: left;
     font-size: 15px;
     line-height: 27px;
@@ -114,7 +117,9 @@ export default styled(About)`
     img{
       object-fit: contain;
       background: white;
-      max-width: 341px;max-height: 414px;}
+      width: 256px;
+      max-height: 325px;
+      }
     h2.italic{text-align: left; padding-left: 12vw;}
   `}
   ${screen.tablet.tablet`
@@ -131,7 +136,7 @@ export default styled(About)`
     }
     img {
       max-width: 40vw;
-      max-height: 388px;
+      max-height: 278px;
       object-fit: contain;
     }
     p.text, p.tiny {
@@ -154,6 +159,7 @@ export default styled(About)`
     img {
       object-fit: contain;
       max-width: 30vw;
+      max-height: 457px;
     }
     h2.italic{text-align: left; padding-left: 5vw;}
 

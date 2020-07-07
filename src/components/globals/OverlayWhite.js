@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {setColor,  transition} from '../../helper-styles'
+import {setColor} from '../../helper-styles'
 import {screen} from '../../media-styles'
 
 
@@ -12,7 +12,6 @@ const  OverlayWhite = ({className, id, zIndex}) => {
 
 
 const OverlayWhiteWrapper = styled(OverlayWhite)`
-  ${transition};
   position: absolute; /* Sit on top of the page content */
   display: block; /* to hide use none  */
   margin: 0 auto;
